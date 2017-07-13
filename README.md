@@ -10,11 +10,11 @@
 
 ### Requirement
 
-- Board
-Nordic nRF52 Development Kit board
+- Board  
+Nordic nRF52 Development Kit board  
 http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.nrf52%2Fdita%2Fnrf52%2Fdevelopment%2Fnrf52_dev_kit.html
 
-- Moisture Sensor
+- Moisture Sensor  
 https://www.dfrobot.com/wiki/index.php/Moisture_Sensor_(SKU:SEN0114)  
 Connect the sensor to the AIN1(P0.03) pin on the dev board.
 
