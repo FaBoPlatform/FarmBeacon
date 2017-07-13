@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "gdb",
+            "request": "attach",
+            "executable": "${workspaceRoot}/MoistBeacon/_build/MoistBeacon.out",
+            "target": "localhost:2331",
+            "cwd": "${workspaceRoot}",
+            "gdbpath": "/usr/local/bin/arm-none-eabi-gdb",
+            "remote": true,
+            "autorun": [
+                "load ./MoistBeacon/_build/MoistBeacon.out",
+                "break main",
+                "monitor reset"
+            ],
+            "preLaunchTask": "Run GDB-Server"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the ocumentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "make",
+    "isShellCommand": true,
+    "args": ["-C"],
+    "showOutput": "always",
+    "suppressTaskName": true,
+    "tasks": [
+    {
+        "taskName": "Clean",
+        "args": ["./MoistBeacon/", "clean"]
+    },
+    {
+        "isBuildCommand": true,
+        "taskName": "Build",
+        "args": ["./MoistBeacon/", "DEBUG=yes"]
+    },
+    {
+        "taskName": "Flash",
+        "args": ["./MoistBeacon/", "flash"]
+    },
+    {
+        "taskName": "Release",
+        "args": ["./MoistBeacon/"]
+    },
+    {
+        "taskName": "Flash ALL",
+        "args": ["./MoistBeacon/", "flash_all"]
+    },
+    {
+        "taskName": "Flash SD",
+        "args": ["./MoistBeacon/", "flash_softdevice"]
+    },
+    {
+        "taskName": "Protect",
+        "args": ["./MoistBeacon/", "protect"]
+    },
+    {
+        "taskName": "Run GDB-Server",
+        "args": ["./MoistBeacon/", "debugger"]
+    }
+  ]
+}
